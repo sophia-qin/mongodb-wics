@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{/css/style.css}">
+    <title>Data</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h2>Data Count</h2>
+    <div class="body-center">
+        <p th:text="'There are ' + ${count} + ' documents in the ' + ${collName} + ' collection in the ' + ${dbName} + ' database!'"/>
+        <a class="button" href="/">Home Page</a>
+    </div>
+</body>
+</html>
